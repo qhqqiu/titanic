@@ -21,18 +21,18 @@ I would like to roughly list out the steps I've taken here.
 * To improve the training accuracy, I used cross validation (by StratifiedKFold from SKlearn)
 * Mean score of straitified cross validations was 0.80
 
-3. Implemeting RandomForestClassifier on train data
+4. Implemeting RandomForestClassifier on train data
 * Why? Randomforest also works well on classification problems and I wanted to try tunning parameters such as n_estimators, min_samples_split, min_samples_leaf.
 * First roughly set the parameters
 * The result is not improved compared to the result of logisticregresion, meaning the parameters need to be adjusted 
 
-4. Increase the number of estimator and limit the depth of the trees
+5. Increase the number of estimator and limit the depth of the trees
 * Te result improved and was even better than the result I got from logistic regression. Thus I decided to use this model.
 
-5. Loading test data
+6. Loading test data
 
-6. Preprocessing test data 
+7. Preprocessing test data 
 * same as step 2
 
-7. Implementing model from step 4 on test data
-8. Loading prediction results to a csv file
+8. Implementing model from step 4 on test data
+9. Loading prediction results to a csv file
